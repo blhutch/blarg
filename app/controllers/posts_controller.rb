@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-  def view
+  def show
     #erb :view
     @post = Post.find(params[:id].to_i)
+    render :show
   end
 end
